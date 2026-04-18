@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Converter"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Radio buttons for conversion type -->
+    <RadioGroup
+        android:id="@+id/radioGroupDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/radioKmToMiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kilometers → Miles"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioMilesToKm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Miles → Kilometers"/>
+
+    </RadioGroup>
+
+    <!-- Input field -->
+    <EditText
+        android:id="@+id/inputDist"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter distance value"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Convert button -->
+    <Button
+        android:id="@+id/btnConvertDist"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Convert"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Result display -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
